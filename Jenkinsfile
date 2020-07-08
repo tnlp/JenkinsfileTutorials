@@ -1,5 +1,9 @@
 pipeline {
-    agent {aws}
+ agent {
+        node {
+            label 'aws'
+        }
+    }    
     stages {
         stage('Pull Git Demo') {
             steps{
