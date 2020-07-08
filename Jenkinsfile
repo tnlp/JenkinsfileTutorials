@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent aws
     stages {
         stage('Pull Git Demo') {
             steps{
