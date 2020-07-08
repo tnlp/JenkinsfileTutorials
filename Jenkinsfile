@@ -22,13 +22,13 @@ pipeline {
                 }
             }
         }
-    }
-   stage('run container') { 
+    
+     stage('run container') { 
             steps {
                     sh 'docker run -d -p 8802:8080 hellxz/example:0.0.1-SNAPSHOT'  
                 }
         }
-    
+    }
     post { //这里定义的是后置处理
         success {
             // 构建成功
